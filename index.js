@@ -10,7 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  var price=getRandomInt(99);
+  var price=getRandomInt(1,100);
   var newItemObject={itemName:[item],itemPrice:[price]}
   cart.push(newItemObject);
   return '${item} has been added to your cart.'
