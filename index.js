@@ -17,10 +17,10 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if(getCart.length===0){
+  if(getCart.length==0){
     return "Your shopping cart is empty.";
   }
-  if(getCart.length===1){
+  if(getCart.length==1){
     return "In your cart, you have "+itemName+" at $"+itemPrice;
   }
   else{
@@ -28,7 +28,7 @@ function viewCart() {
     for(var i=0;i<getCart.length-1;i++){
       tempString=tempString+' '+itemName+' at '+itemPrice+',';
     }
-    tempString=tempstring+' and'+getCart[getCart.length-1].itemName+' at '+getCart[getCart.length-1].itemPrice+'.';
+    tempString=tempstring+' and'+getCart[getCart.length-1].itemName+' at $'+getCart[getCart.length-1].itemPrice+'.';
     return tempstring;
   }
 }
