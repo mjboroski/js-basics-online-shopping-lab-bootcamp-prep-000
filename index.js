@@ -17,9 +17,21 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
+  if(getCart.length===0){
+    return "Your shopping cart is empty.";
+  }
+  if(getCart.length===1){
+    return "In your cart, you have "+itemName+" at $"+itemPrice;
+  }
+  else{
+    var tempString = 'In your cart, you have';
+    for(var i=0;i<getCart.length-1;i++){
+      tempString=tempString+' '+itemName+' at '+itemPrice+',';
+    }
+    tempString=tempstring+' and'+getCart[getCart.length-1].itemName+' at '+getCart[getCart.length-1].itemPrice+'.';
+    return tempstring;
+  }
 }
-
 function total() {
   // write your code here
 }
