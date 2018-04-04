@@ -21,12 +21,12 @@ function viewCart() {
     return "Your shopping cart is empty.";
   }
   if(getCart().length==1){
-    return "In your cart, you have "+itemName+" at $"+itemPrice;
+    return "In your cart, you have "++getCart()[itemName]+" at $"++getCart()[itemPrice];
   }
   else{
     var tempString = 'In your cart, you have';
     for(var i=0;i<getCart().length-1;i++){
-      tempString=tempString+' '+itemName+' at '+itemPrice+',';
+      tempString=tempString+' '++getCart()[itemName]+' at '++getCart()[itemPrice]+',';
     }
     tempString=tempstring+' and'+getCart()[getCart().length-1].itemName+' at $'+getCart()[getCart().length-1].itemPrice+'.';
     return tempstring;
