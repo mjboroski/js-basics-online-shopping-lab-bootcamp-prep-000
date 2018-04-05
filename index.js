@@ -42,15 +42,15 @@ return total;
 }
 
 function removeFromCart(item){
-if (getCart().length==0){
-  return 'That item is not in your cart.';
-}
+  if (getCart().length==0){
+    return 'That item is not in your cart.';
+  }
   for(var i=0;i<getCart().length;i++){
-    if (getCart()[i].itemName==item){
-      var itemNumber = cart.indexOf(item);
+    if (item==getCart()[i].itemName){
+      var itemNumber = cart.indexOf(item)-1;
     }
-}
-return cart.splice(itemNumber,1);
+  }
+  return cart.splice(itemNumber,1);
 }
 
 function placeOrder(cardNumber) {
