@@ -42,7 +42,7 @@ return total;
 }
 
 function removeFromCart(item) {
-  var itemNumber = getCart().indexOf(item);
+  var itemNumber = getCart()[indexOf(item)];
   getCart().splice(itemNumber,1)
 }
 
