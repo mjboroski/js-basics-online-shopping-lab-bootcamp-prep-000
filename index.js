@@ -41,9 +41,17 @@ function total() {
 return total;
 }
 
-function removeFromCart(item) {
-  var itemNumber = cart.indexOf(item);
-  cart=[...cart.slice(0,itemNumber), ...cart.slice(itemNumber,cart.length-1)]
+function removeFromCart(item){
+if (getCart().length==0){
+  return 'That item is not in your cart.';
+}
+  for(var i=0;i<getCart().length;i++){
+    if (item==getCart()[i]){
+      var itemNumber = cart.indexOf(item);
+    }
+}
+cart=[...cart.slice(0,itemNumber), ...cart.slice(itemNumber,cart.length-1)]
+return cart;
 }
 
 function placeOrder(cardNumber) {
