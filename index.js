@@ -38,7 +38,7 @@ function total() {
     total=total+getCart()[i].itemPrice;
   }
 return total;
-}  
+}
 
 function removeFromCart(item) {
   // write your code here
