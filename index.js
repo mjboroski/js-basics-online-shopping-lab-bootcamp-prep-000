@@ -46,7 +46,7 @@ if (getCart().length==0){
   return 'That item is not in your cart.';
 }
   for(var i=0;i<getCart().length;i++){
-    if (getCart()[i]==item){
+    if (getCart()[i].itemName==item){
       var itemNumber = cart.indexOf(item);
     }
 }
