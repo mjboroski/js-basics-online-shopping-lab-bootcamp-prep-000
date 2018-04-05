@@ -26,9 +26,9 @@ function viewCart() {
   else{
     var tempString = 'In your cart, you have';
     for(var i=0;i<getCart().length-1;i++){
-      tempString=tempString+' '+getCart()[i].itemName+' at '+getCart()[i].itemPrice+',';
+      tempString=tempString+' '+getCart()[i].itemName+' at $'+getCart()[i].itemPrice+',';
     }
-    tempString=tempString+' and'+getCart()[getCart().length-1].itemName+' at $'+getCart()[getCart().length-1].itemPrice+'.';
+    tempString=tempString+' and '+getCart()[getCart().length-1].itemName+' at $'+getCart()[getCart().length-1].itemPrice+'.';
     return tempString;
   }
 }
