@@ -26,7 +26,7 @@ function viewCart() {
   else{
     var tempString = 'In your cart, you have';
     for(var i=0;i<getCart().length-1;i++){
-      tempString=tempString+' '+getCart()[0].itemName+' at '+getCart()[0].itemPrice+',';
+      tempString=tempString+' '+getCart()[i].itemName+' at '+getCart()[i].itemPrice+',';
     }
     tempString=tempstring+' and'+getCart()[getCart().length-1].itemName+' at $'+getCart()[getCart().length-1].itemPrice+'.';
     return tempstring;
