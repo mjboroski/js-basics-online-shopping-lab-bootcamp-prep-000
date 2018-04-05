@@ -32,6 +32,7 @@ function viewCart() {
     return tempString;
   }
 }
+
 function total() {
   var total=0
   for(var i=0;i<getCart().length;i++){
@@ -41,7 +42,8 @@ return total;
 }
 
 function removeFromCart(item) {
-  // write your code here
+  var itemNumber = cart.indexOf(item);
+  getCart().splice(indexOfItemToRemove,1)
 }
 
 function placeOrder(cardNumber) {
