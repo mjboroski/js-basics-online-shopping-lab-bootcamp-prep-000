@@ -50,7 +50,7 @@ if (getCart().length==0){
       var itemNumber = cart.indexOf(item);
     }
 }
-cart=[...cart.slice(0,itemNumber), ...cart.slice(itemNumber,cart.length-1)]
+getCart().splice(itemNumber,1)
 return cart;
 }
 
