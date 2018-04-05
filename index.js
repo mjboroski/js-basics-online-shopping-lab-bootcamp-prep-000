@@ -50,7 +50,7 @@ if (getCart().length==0){
       var itemNumber = cart.indexOf(item);
     }
 }
-return getCart().splice(itemNumber,1);
+return cart.splice(itemNumber,1);
 }
 
 function placeOrder(cardNumber) {
