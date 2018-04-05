@@ -28,8 +28,8 @@ function viewCart() {
     for(var i=0;i<getCart().length-1;i++){
       tempString=tempString+' '+getCart()[i].itemName+' at '+getCart()[i].itemPrice+',';
     }
-    tempString=tempstring+' and'+getCart()[getCart().length-1].itemName+' at $'+getCart()[getCart().length-1].itemPrice+'.';
-    return tempstring;
+    tempString=tempString+' and'+getCart()[getCart().length-1].itemName+' at $'+getCart()[getCart().length-1].itemPrice+'.';
+    return tempString;
   }
 }
 function total() {
