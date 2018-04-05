@@ -61,7 +61,7 @@ function placeOrder(cardNumber) {
     cart=[];
     return string;
   }
-  
+
 }
 
 function getRandomInt(min, max) {
